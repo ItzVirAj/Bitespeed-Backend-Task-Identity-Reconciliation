@@ -7,7 +7,7 @@ function App() {
   const [result, setResult] = useState(null);
 
   async function handleSubmit() {
-    const res = await fetch("http://localhost:3000/identify", {
+    const res = await fetch("https://bitespeed-backend-task-identity-reconciliation-production-6727.up.railway.app/identify", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
